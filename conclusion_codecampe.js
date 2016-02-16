@@ -313,8 +313,7 @@ if (num > 15) {
 			    statementN;
 			    break;
 			}
-
-function myTest(val) {
+اfunction myTest(val) {
   var answer = "";
   // Only change code below this line
   switch(val){
@@ -419,7 +418,9 @@ function isEqual(a,b) {
 		>>> Hello 
 "byebye" is never output,
  because the function exits at the return statement.
- //===================================
+ //============================================================================
+
+ 
  !! Objects  
 		 var cat = {
 		  "name": "Whiskers",
@@ -443,3 +444,402 @@ var myObj = {
 };
 myObj["Space Name"]; // Kirk
 myObj['More Space']; // Spock
+
+!! we have know about objects properities 
+*** ourDog.name = "Happy Camper"; 
+
+this is the way to manipulation .
+
+or 
+
+*** ourDog["name"] = "Happy Camper";
+
+if you want to add anew properity and value like last instructions . 
+*** ourDog["name"] = "Happy Camper"; 
+// add new property called name to object ourDog with value "Happy Camper"
+*** ourDog.name = "Happy Camper"; 
+
+
+if we wanna delet any  property . 
+delete myDog.tails ; // delet property which called tails in myDog object
+
+
+//==========================================
+if we need to find if the property is existed inside the object or not : 
+we use >>> object.hasOwnProperty("property")
+
+
+
+
+// Setup
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+  // Your Code Here
+  if (myObj.hasOwnProperty([checkProp])){
+    return myObj[checkProp];
+  }
+  
+  return "Not Found";
+}
+
+// Test your code by modifying these values
+checkObj("gift");
+
+
+>>> pony 
+
+//=====================================
+
+$$ JavaScript Object Notation or JSON uses the format 
+of JavaScript Objects to store data. 
+JSON is flexible because it allows 
+for Data Structures with arbitrary 
+combinations of strings, numbers, booleans, arrays, and objects.
+
+		** example
+				var ourMusic = [
+				  {
+				    "artist": "Daft Punk",
+				    "title": "Homework",
+				    "release_year": 1997,
+				    "formats": [ 
+				      "CD", 
+				      "Cassette", 
+				      "LP" ],
+				    "gold": true
+				  }
+				];
+
+
+!! to access any value or specific object 
+
+example *** 
+
+				var ourStorage = {
+				  "desk": {
+				    "drawer": "stapler"
+				  },
+				  "cabinet": {
+				    "top drawer": { 
+				      "folder1": "a file",
+				      "folder2": "secrets"
+				    },
+				    "bottom drawer": "soda"
+				  }
+				}
+				ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+				ourStorage.desk.drawer; // "stapler"
+
+example** to show tou ow to use arrays and objects 
+
+// Setup
+						var myPlants = [
+						  { 
+						    type: "flowers",
+						    list: [
+						      "rose",
+						      "tulip",
+						      "dandelion"
+						    ]
+						  },
+						  {
+						    type: "trees",
+						    list: [
+						      "fir",
+						      "pine",
+						      "birch"
+						    ]
+						  }  
+						];
+
+						// Only change code below this line
+
+						var secondTree =myPlants[1].list[1]  ; // Change this line	
+						>>> secondTree = pine 
+
+//==================================================================
+looping in JavaScript >>>> 
+if (initialization ; timer ; step ){ 
+< Block >
+}						
+		
+while(test){
+
+	< Block >
+}
+
+//====================================================
+Math.random();  >>>>> it gives random numbers  >> 0.86666666 
+Math.floor(Math.random()*10); >> 8 
+ Math.floor((Math.random()*100 )+ 1 ); >> 87 
+
+ //==========================================================
+
+ $$ Regular expressions are used to find 
+ certain words or patterns inside of strings.
+ just /the/gi 
+
+ ** For example, 
+ if we wanted to find the word (the) 
+ 	in the string The dog chased the cat,
+ 	 we could use the following regular expression
+
+ 	 : /the/gi
+//====================================
+Regular Expressions 
+  / < ex>  /g  
+
+   		\s   space
+   		\r   the carriage return
+   		\d+   numbers 
+   		\t   tab
+   		\f 	 the form feed
+
+   		\S  find what else than wight spaces 
+
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$             $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ # ########  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ #         # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ #         # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ #         # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ #         # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ # ####### # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ #         # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ # $$$$$$$ # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ # $$$$$$$ # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$ # $$$$$$$ # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$   $$$$$$$   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$$ Construct JavaScript Objects with Functions
+you can construct new object by using constructor 
+		example** 
+
+var MotorBike = function() {
+  this.wheels = 2 ;
+  this.engines = 1 ;
+  this.seats = 2 ;
+
+};
+
+>>> {"wheels":2 , "engines":1 , "seats":2}
+
+
+ we can add parameters to our constructor. We do this like the following example:
+
+var Car = function(wheels, seats, engines) {
+
+  this.wheels = wheels;
+
+  this.seats = seats;
+
+  this.engines = engines;
+
+};
+
+>>>>>  imprtant >>>>>   var myCar = new Car(6, 3, 1);
+
+This code will create an object that uses the arguments we passed in and looks like:
+
+{
+
+  wheels: 6,
+
+  seats: 3,
+
+  engines: 1
+
+}
+
+***example
+
+var Bike = function() {
+
+  // Only change code below this line.
+  var gear =0  ; 
+
+  
+  
+  this.setGear=function(change){
+    return gear += change ;
+    
+  } ;
+  
+    this.getGear=function(){
+    return gear ;
+    
+  } ;
+
+
+
+  // Only change code above this line.
+};
+
+var myCar = new Car();
+
+var myBike = new Bike();
+//=======================================================
+
+$$Iterate over Arrays with map
+if we have an array 
+	var myArray = [1,2,3,4,5];
+myArray.map(function(val){
+
+	return val + 1 ; 
+})
+
+>>> 2,3,4,5,6 
+we have modified all values in array by iterating through each index . 
+
+array.reduce(function(previous_value , current_value){
+
+	return  < Block>
+}) ; 
+
+!!! new_arr=array.concat(arry2)
+array = [1,2,3]      ; 
+arry2=[4,5,6]
+>>> new_arr = [1,2,3,4,5,6] 
+
+
+$$ arry.filter(function(val){
+	return any value we want to filter it ;
+});
+
+** example 
+array = array.filter(function(val) {
+
+  return val !== 5;
+
+});
+
+>>> The following code is an example of using
+ filter to remove array elements that are equal to five:
+
+ !! note  >>> Any array element for which the callback 
+ returns true will be kept and 
+ elements that return false will be filtered out.
+
+
+var oldArray = [1,2,3,4,5,6,7,8,9,10];
+var newArray = [];
+
+// Only change code below this line.
+
+newArray = oldArray.filter(function(val){
+  return val <= 5 ;
+  
+});
+
+>>> 1,2,3,4,5 
+
+filter to remove all elements from oldArray that are greater than 5.
+//=================================
+
+$$ sort can be passed a compare function as a callback. 
+If no compare function is passed in it will convert the values 
+to strings and sort alphabetically.
+
+example** 
+		var array = [1, 12, 21, 2];
+
+		// Only change code below this line.
+
+		array.sort(function(a,b){
+		  return b -a ;
+		});
+
+>>> 21,12,2,1 
+
+
+!! You can use the reverse method to reverse the elements of an array.
+
+var myArray = [1, 2, 3]; myArray.reverse();
+
+>>> returns [3, 2, 1]
+
+//===========================================
+$$	You can use the split method to split a string into an array.
+var string = "Split me into an array";
+var array = [];
+
+// Only change code below this line.
+
+array = string.split(' ');
+
+>>> Split  ,  me , into , an , array 
+//==================================
+we can use arr.join to convent arr to string 
+delimated with any string or num or space .
+
+var joinMe = ["Split","me","into","an","array"];
+var joinedString = '';
+
+// Only change code below this line.
+
+joinedString = joinMe.join(' ');
+
+>>> Split me into an array 
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////
+function get_input(n) {
+    var inputs = [];
+    while (inputs.length < n) {
+        var input = prompt("Enter pos (x,y): ");
+        if (input.match(/^\(\d+,\d+\)$/) {
+            var arr = input.substring(1, input.length-1).split(',').map(function(a) { return parseInt(a); });
+            inputs.push(arr);
+        }
+    }
+    return inputs;
+}
+
+
+
+It checks if the line matches the regex.
+The regex says:
+^ : start of the line
+( : start of brackets
+\d+ : one or more digits (used for x)
+, : comma
+\d+ : one or more digits (used for y)
+) : close of brackets
+$ : end of line
+
+ 
