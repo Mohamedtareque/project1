@@ -16,6 +16,7 @@
 * [Mozilla doucumentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 * [Online interpreter to JS](https://repl.it/BcEj)
 * [Quick reference inJS](http://www.tutorialspoint.com//javascript/index.htm)
+* [Regular expression calculator](https://regex101.com/)
 	
 **HTML & CSS**
 * [W3school](http://www.w3schools.com/)
